@@ -1,0 +1,59 @@
+/*布局框架*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.demo {
+  height: 59.25925926rem;
+  margin-top: 2.60740741rem;
+}
+/*导航*/
+#nav {
+  width: 100%;
+  height: 2.60740741rem;
+  background: -webkit-linear-gradient(left, #4bdc9b, #48b6ad);
+  background: -o-linear-gradient(left, #4bdc9b, #48b6ad);
+  background: -moz-linear-gradient(left, #4bdc9b, #48b6ad);
+  background: linear-gradient(left, #4bdc9b, #48b6ad);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#nav a {
+  font-size: 0.82962963rem;
+  float: left;
+  padding: 0.75555556rem 0;
+  color: #fff;
+  display: block;
+}
+#nav a:nth-child(1) {
+  margin-left: 0.65185185rem;
+}
+#nav a:hover {
+  color: #fff;
+}
+#nav span {
+  background: url(../img/left.png) no-repeat;
+  background-size: 0.59259259rem 1.03703704rem;
+  height: 1.03703704rem;
+  width: 0.59259259rem;
+  display: block;
+  float: left;
+  margin-right: 0.41481481rem;
+  margin-top: 0.05925926rem;
+}
+#nav a:nth-child(2) {
+  float: right;
+  margin-right: 0.94814815rem;
+}
+/*搜索*/
+#searchBg {
+  width: 100%;
+  height: 2.60740741rem;
+}

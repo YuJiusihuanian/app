@@ -1,0 +1,62 @@
+@rem:33.75rem;
+
+/*布局框架*/
+html{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	overflow:auto;
+}
+.demo{
+	height:2000/@rem;
+	margin-top:88/@rem;
+}
+/*导航*/
+#nav{
+	width:100%;
+	height:88/@rem;
+	//渐变
+	background:-webkit-linear-gradient(left,#4bdc9b,#48b6ad);
+	background:-o-linear-gradient(left,#4bdc9b,#48b6ad);
+	background:-moz-linear-gradient(left,#4bdc9b,#48b6ad);
+	background:linear-gradient(left,#4bdc9b,#48b6ad);
+	position:absolute;
+	left:0;
+	top:0;
+}
+#nav a{
+  	font-size: 28/@rem;
+  	float:left;
+	padding:25.5/@rem 0;
+	color:#fff;
+	display: block;
+}
+#nav a:nth-child(1){
+	margin-left:22/@rem;
+}
+#nav a:hover{
+	color:#fff;
+}
+#nav span{
+	background:url(../img/left.png) no-repeat;
+	background-size:20/@rem 35/@rem;
+	height:35/@rem;
+	width:20/@rem;
+	display:block;
+	float:left;
+	margin-right:14/@rem;
+	margin-top:2/@rem;
+}
+#nav a:nth-child(2){
+	float:right;
+	margin-right:32/@rem;
+}
+/*搜索*/
+#searchBg{
+	width:100%;
+	height:88/@rem;
+}

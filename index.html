@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<script>
+	//获取像素比
+		var pixelRatio = 1 / window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,user-scalable=no width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+	</script>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<nav id="nav">
+		<a href="#"><span></span>返回</a>
+		<a href="#">我的钱包</a>
+	</nav>
+	<div id="searchBg">
+		<form action="" calss="searchForm">
+			<input type="text" class="searchInput">
+		</form>
+	</div>
+	<div class="demo">11</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+//先执行一次
+setSize();
+window.addEventListener("resize",setSize,false);
+window.addEventListener("orientationchange",setSize,false);
+
+function setSize(){
+	var html = document.getElementsByTagName('html')[0];
+	var width = html.getBoundingClientRect().width;
+	//当宽度大于540的时候最大宽度为540，否则是多少就多少
+	width = width > 540 ? 540 : width;
+	html.style.fontSize = width / 16 +'px';
+}
+</script>
+</body>
+</html>
